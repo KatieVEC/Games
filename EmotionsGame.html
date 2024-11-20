@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Game</title>
+    <link rel="stylesheet" href="https://livability.sharepoint.com/sites/VictoriaSchoolStaffHub/SiteAssets/Game%20Files/EmotionsGame/style.css">
+</head>
+<body>
+<!-- Difficulty Menu (Hidden by default) -->
+    <div id="difficulty-menu" class="menu-container">
+	<h1>Emotion Game</h1>
+        <h2>Select Difficulty</h2>
+        <button class="difficulty-btn" onclick="setDifficulty('easy')">Easy</button>
+        <button class="difficulty-btn" onclick="setDifficulty('hard')">Hard</button>
+    </div>
+    <!-- Game Container (Initially Hidden) -->
+    <div class="game-container" id="game-container" style="display:none;">
+        <h1>Emotion Game</h1>
+        <p>Choose the emotion you think the child is feeling!</p>
+        
+        <!-- Display Main Image -->
+        <div id="main-image-container">
+            <img id="main-image" src="" alt="Image to Identify">
+        </div>
+
+        <!-- Options -->
+        <div id="options-container">
+            <button class="option" onclick="checkAnswer(0)">Option 1</button>
+            <button class="option" onclick="checkAnswer(1)">Option 2</button>
+            <button class="option" onclick="checkAnswer(2)">Option 3</button>
+        </div>
+
+        <!-- Result Feedback -->
+        <div id="feedback-container">
+            <p id="feedback"></p>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-button" onclick="nextRound()" style="display:none;">Next Round</button>
+        
+        <!-- Final Score -->
+        <div id="final-score-container" style="display:none;">
+            <p id="final-score">Your final score: 0</p>
+	<button id="back-to-levels-button" onclick="goBackToLevels()" style="display:none;">Back to Levels</button>
+
+        </div>
+    </div>
+
+    <script src="https://livability.sharepoint.com/sites/VictoriaSchoolStaffHub/SiteAssets/Game%20Files/EmotionsGame/script.js"></script>
+</body>
+</html>

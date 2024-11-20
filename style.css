@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	flex-direction: column;
+}
+.menu-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+}
+
+.difficulty-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.difficulty-btn:hover {
+    background-color: #2980b9;
+}
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;  /* Make sure the container adjusts to screen size */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Prevents overflow issues */
+}
+
+#main-image {
+    width: 300px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: contain; /* Resize the image to fit inside the box without cropping */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#options-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%; /* Make sure it uses full width available */
+}
+
+.option {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #45a049;
+}
+
+#feedback-container {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#next-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#next-button:hover {
+    background-color: #2980b9;
+}
+
+#final-score-container {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    display: block;
+    width: 100%;  /* Ensures it spans full width of the container */
+    text-align: center;
+}
+#back-to-levels-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#back-to-levels-button:hover {
+    background-color: #e74c3c;
+}
+
+#final-score {
+    font-size: 22px;
+    color: #4CAF50;
+}
